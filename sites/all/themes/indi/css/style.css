@@ -9,7 +9,7 @@ a { text-decoration: none; }
 	max-width: 1200px;
 }
 
-#container-bravo { background: #a30234; margin: 25px 0; }
+#container-bravo { background: #a30234; margin: 25px 0 0 0; }
 
 .region-above-content { padding: 0 10px; }
 
@@ -40,8 +40,15 @@ li a.active { color: #666; }
 }
 
 
+/* MAP */
+
+.map-title a { color: #a30234; font-size: 24px; font-weight: 600 }
+.map-deal {}
+
+
 /* HERO */
 
+#block-views-hero-block { margin-bottom: 0; }
 .view-hero { overflow: auto; }
 .view-hero .views-field-nothing .its-an-image { }
 .view-hero .views-field-nothing .its-an-image img { float: right; }
@@ -84,6 +91,8 @@ li a.active { color: #666; }
 	#block-system-main-menu { font-size: 15px; }
 	#block-system-main-menu ul li { margin-right: 23px;}
 	#block-system-main-menu ul li.last { margin-right: 0px;}
+	
+	.front #content { padding:0	; }
 }
 
 

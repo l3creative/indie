@@ -36,6 +36,8 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
     </div><!-- /#content -->
+    
+    <?php print render($page['below_content']); ?>
 
     <?php
       // Render the sidebars to see if there's anything in them.
