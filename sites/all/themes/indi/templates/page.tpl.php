@@ -54,8 +54,12 @@
 
   </div><!-- /#main -->
 
-  <?php print render($page['footer']); ?>
-
 </div><!-- /#charlie -->
+
+<div id="container-delta">
+	<div id="delta">
+		<?php print render($page['footer']); ?>
+	</div>
+</div><!-- /#delta-container -->
 
 <?php print render($page['bottom']); ?>

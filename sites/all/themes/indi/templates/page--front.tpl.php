@@ -21,14 +21,18 @@
 
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
+      <?php print $breadcrumb; ?>
+      <a id="main-content"></a>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php print render($page['below_content']); ?>
+      <?php print render($page['content']); ?>
     </div><!-- /#content -->
+    
+    <?php print render($page['below_content']); ?>
 
     <?php
       // Render the sidebars to see if there's anything in them.
@@ -45,8 +49,12 @@
 
   </div><!-- /#main -->
 
-  <?php print render($page['footer']); ?>
-
 </div><!-- /#charlie -->
+
+<div id="container-delta">
+	<div id="delta">
+		<?php print render($page['footer']); ?>
+	</div>
+</div><!-- /#delta-container -->
 
 <?php print render($page['bottom']); ?>

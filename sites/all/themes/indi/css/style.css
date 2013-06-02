@@ -3,13 +3,15 @@ body { font-family: 'Open Sans', helvetica, arial, sans-serif; color: #666; marg
 
 a { text-decoration: none; }
 
-#alpha, #bravo, #charlie { 
+#alpha, #bravo, #charlie, #delta { 
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1200px;
 }
 
 #container-bravo { background: #a30234; margin: 25px 0 0 0; }
+
+#container-delta { background: #ccc; margin: 25px 0 0 0; }
 
 .region-above-content { padding: 0 10px; }
 
@@ -39,6 +41,23 @@ li a.active { color: #666; }
 	max-width: 1200px;
 }
 
+/* HOME */
+
+#tab-control { float: left; width: 200px; }
+ul#tab-control { padding: 0; margin: 0 25px 0 0; }
+ul#tab-control li { list-style: none; text-align: right; }
+ul#tab-control li a { text-transform: uppercase; color: #aaa; font-weight: bold; display: block; padding: 8px 20px 8px 0; border-top: none; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+
+ul#tab-control li a.first { border-top: 1px solid #ddd;} 
+/* ul#tab-control li.last a { border-bottom: 1px solid #ddd;} */
+ul#tab-control li.active a { background: url(../images/tab-border.png); background-position: 0 bottom; background-repeat: repeat-x; border-right: 1px solid #fff; border-bottom: 1px solid #fff; color: #666;}
+ul#tab-control li.active a.first { border-top: 1px solid #fff; }
+
+.tabby { float: left; width: 77%; }
+.tab-headline { font-weight: bold; color: #a30234; font-size: 2em; margin: 0 0 8px 0; }
+.tab-subheader { font-weight: bold; font-size: 1.2em; margin: 0 0 15px 0;}
+.tab-copy { color: #777; }
+.tabby .tab-image { float: left; margin: 0 25px 40px 0;}
 
 /* MAP */
 
@@ -56,10 +75,24 @@ li a.active { color: #666; }
 .view-hero .views-field-nothing .copy a { color: #fff; font-weight: 300; font-size: 47px; line-height: 50px;}
 .view-hero .views-field-nothing a.its-a-button { background: #f0cc01; color: #a30234; padding: 6px 10px; }
 
+/* FOOTER */
 
+#block-menu-menu-footer-menu { float: right; overflow: auto; }
+#container-delta { border-top: solid 25px #e7e7e7 }
+footer#footer ul { margin: 20px 0 10px 0; padding: 0;  }
+footer#footer ul li { list-style: none; list-style-type: none; float: left; }
+footer#footer ul li a { font-size: 0.8em; display: block; border-right: 1px solid #888; padding: 0 15px; line-height: 1.1em;}
+footer#footer ul li.last a { border-right: none; padding-right: 0; }
 
+#block-block-4 { float: left; font-size: 0.7em; margin-top: 15px; }
 
+/* DEALS */
 
+.masonry-item { 
+	-moz-box-shadow: 0px 0px 5px #aaa;
+	-webkit-box-shadow: 0px 0px 5px #aaa;
+	box-shadow: 0px 0px 5px #aaa;
+}
 
 /* - RESPONSIVE - */
 
